@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".donationdetails"
+    android:background="@drawable/img_login_bg">
+
+    <ImageView
+        android:id="@+id/donationdetais_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_donationdetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/donationdetais_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/donationdetais_img"
+        android:text=" إنــه مــن فضــل الله ومنتـه أن أعمــال المسلـم لا تنقطـع بموته وخروجه من الدنيا بل هنـاك أعمال تجري حسنــاتهــا له بعد وفــاتــه، ولقد علم سلف هذه الأمــة هذا الخير فسابقوا إليه وتنافسوا فيه، وامتثالاً لقول النبي صلى الله عليه وسلم  ” إذا مــات ابن آدم انقطع عمله إلا من ثلاث : صدقة جارية أو علم ينتفع به أو ولد صالح يدعو له ” رواه مسلم"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donationdetais_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/donationvalue"
+            android:drawableStart="@drawable/ic_donationdetails_dolar"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

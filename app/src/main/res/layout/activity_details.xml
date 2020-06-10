@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailsActivity"
+    android:background="@drawable/img_login_bg">
+
+    <ImageView
+        android:id="@+id/details_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_detieal_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/details_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="انطلاق ملتقى منبر الأقصى للخطباء   \nوالدعاة بإسطنبول"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_header" />
+
+    <TextView
+        android:id="@+id/details_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="326dp"
+        android:text="  منذ يومان"
+        android:textColor="#CE8B2B"
+        android:textSize="20sp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_tx"
+        android:drawableEnd="@drawable/ic_detials_time" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_time">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_time"
+            android:textAlignment="center"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:text="طلقت في مدينة إسطنبول التركية الجمعة فعاليات \n ملتقى منبر الأقصى للخطباء والدعاة الذي تنظمه لجان القدس في الاتحاد العالمي لعلماء المسلمين وهيئة علماء فلسطين في الخارج وملتقى القدس أمانتي  \nالتابع لجمعية إرادة الدولية
+وحضر الملتقى الذي يقام بمناسبة الذكرى السنوية  \nالخمسين لاحتلال المسجد الأقصى المبارك شخصيات دينية وسياسية ونحو 200 خطيب وداعية من عدد من الدول العربية والإسلامية، بينها تركيا ولبنان ومصر والعراق وقطر والسعودية والمغرب والجزائر وماليزيا وإندونيسيا وغيرها
+ووصف المتحدثون في جلسة الافتتاح الملتقى بأنه ثمرة لتعاون المؤسسات التي تحمل هم القدس وتتبنى الدفاع عنها، مؤكدين على ضرورة استثمار دور الخطباء والدعاة في العمل لمدينة القدس وتوعية الأمة العربية والإسلامية بالمخاطر المحيقة بها كما أكدوا على دور الخطباء والدعاة في الحفاظ على هوية القدس والمسجد الأقصى المبارك، والعمل على تحريك الهمم تجاه القضية الفلسطينية قضية المسلمين الأولى.
+القره داغي دعا إلى توحيد جهود العلماء وطاقات المؤسسات العاملة للقدس (الجزيرة)
+القره داغي دعا إلى توحيد جهود العلماء وطاقات المؤسسات العاملة للقدس (الجزيرة)
+
+واجب لا تطوع
+وقال  الأمين العام للاتحاد العالمي لعلماء المسلمين الدكتور علي القره داغي إن العلماء والدعاة والأئمة والوعاظ مرابطون على ثغر من ثغور الإسلام، معتبرا العمل للقدس والدفاع عن فلسطين واجبا شرعيا لا عملا تطوعيا على كل منهم
+طلقت في مدينة إسطنبول التركية الجمعة فعاليات ملتقى منبر الأقصى للخطباء والدعاة الذي تنظمه لجان القدس في الاتحاد العالمي لعلماء المسلمين وهيئة علماء فلسطين في الخارج وملتقى القدس أمانتي التابع لجمعية إرادة الدولية
+وحضر الملتقى الذي يقام بمناسبة الذكرى السنوية الخمسين لاحتلال المسجد الأقصى المبارك شخصيات دينية وسياسية ونحو 200 خطيب وداعية من عدد من الدول العربية والإسلامية، بينها تركيا ولبنان ومصر والعراق وقطر والسعودية والمغرب والجزائر وماليزيا وإندونيسيا وغيرها
+ووصف المتحدثون في جلسة الافتتاح الملتقى بأنه ثمرة لتعاون المؤسسات التي تحمل هم القدس وتتبنى الدفاع عنها، مؤكدين على ضرورة استثمار دور الخطباء والدعاة في العمل لمدينة القدس وتوعية الأمة العربية والإسلامية بالمخاطر المحيقة بها كما أكدوا على دور الخطباء والدعاة في الحفاظ على هوية القدس والمسجد الأقصى المبارك، والعمل على تحريك الهمم تجاه القضية الفلسطينية قضية المسلمين الأولى.
+القره داغي دعا إلى توحيد جهود العلماء وطاقات المؤسسات العاملة للقدس (الجزيرة)
+القره داغي دعا إلى توحيد جهود العلماء وطاقات المؤسسات العاملة للقدس (الجزيرة)
+
+واجب لا تطوع
+وقال الأمين العام للاتحاد العالمي لعلماء المسلمين الدكتور علي القره داغي إن العلماء والدعاة والأئمة والوعاظ مرابطون على ثغر من ثغور الإسلام، معتبرا العمل للقدس والدفاع عن فلسطين واجبا شرعيا لا عملا تطوعيا على كل منهم"/>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

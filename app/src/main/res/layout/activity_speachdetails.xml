@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".speachdetailsActivity"
+    android:background="@drawable/img_login_bg">
+
+    <TextView
+        android:id="@+id/speachdetails_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أدركوا المسجد الأقصى"
+        android:textColor="#535353"
+        android:textSize="22sp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/speachdetails_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  خالد عبد العزيز"
+        android:textColor="#535353"
+        android:textSize="16sp"
+        android:drawableEnd="@drawable/ic_speachdeails_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speachdetails_tv1" />
+
+    <TextView
+        android:id="@+id/speachdetails_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_speachdetails_time"
+        android:text="  منذ 5 دقائق  "
+        android:textColor="#CE8B2B"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speachdetails_tv2" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speachdetails_tv3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="26dp"
+            android:text="الحمد لله الحمد لله الذي في السماء - تعالى-وتقدس، واصطفى من البقاع الحرمين الشريفين والبيت المقدس، الحمد لله ولا يبلغ حمده حامد، وأشكره على نعمه التي لا يعدها عاد، ولا يحيط بها راصد، الله الذي جعل الأيام دولاً، والأمم بعضها لبعض آيات ومثلا. وأشهد أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمداً عبده ورسوله، صلى الله وسلم وبارك عليه، وعلى آله وصحبه والتابعين، ومن تبعهم بإحسان إلى يوم الدين. أما بعد: فاتقوا الله -تعالى- وراقبوه، وأطيعوا أمره ولا تعصوه، وما استجلبت الخيرات إلا بالطاعة، وما محقت الأحوال إلا بالمعاصي والذنوب، وإن العبد ليُُحرم الرزق بالذنب يصيبه: (يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَقُولُوا قَوْلاً سَدِيداً * يُصْلِحْ لَكُمْ أَعْمَالَكُمْ وَيَغْفِرْ لَكُمْ ذُنُوبَكُمْ وَمَن يُطِعْ اللَّهَ وَرَسُولَهُ فَقَدْ فَازَ فَوْزاً عَظِيماً) [الأحزاب: 70-71]عباد الله: لقد أحب الله -تعالى- من خلقه، واصطفى ما شاء من الرسل والأنبياء والبلاد والبقاع، وهذه حكاية مكان قدَّسه الله وشرَّفه وعظَّمه وكرَّمه إنه: (المسجد الأقصى) وقدسه المقدس، وإرث الأمة الخاتمة الذي يسكن قلب كل مسلم، ذكره الله في القرآن العظيم بلفظ: التقديس، والأرض المقدسة، والمسجد الأقصى، وباركه الله، وبارك ما حوله، ففاضت بركته الدينية والدنيوية، حتى بورك الذي حوله لبركته. أقسم الله -تعالى- بثمرته فقال: (وَالتِّينِ وَالزَّيْتُونِ) [التين: 1] إشارة إلى (المسجد الأقصى)، ثم أقسم بـ (طور سينين) الذي كلم فيه رسوله موسى - عليه السلام - ثم أقسم بـ (هذا البلد الأمين) مكة المكرمة مبعث الرسول محمد الخاتم وأمته الوراثة " />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/ic_speachdetails_dawnload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
