@@ -74,4 +74,32 @@
     <string name="speachtype">نوع الخطبة</string>
     <string name="speachaddress">عنوان الخطبة</string>
     <string name="speachlink">رابط الخطبة</string>
+    <string name="speach_search">ابحث في الخطب</string>
+    <string name="speach_visualspeach">خطب مرئية</string>
+    <string name="speach_textspeach">خطب نصية</string>
+    <string name="notify">الاشعارات</string>
+    <string name="search">ابحث</string>
+    <string name="share">مشاركة</string>
+    <string name="more_login">تسجيل الدخول</string>
+    <string name="news_choose">اختر اللغة</string>
+    <string name="dawnloaded">هل تريد بدء التحميل ؟</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">العربية</string>
+    <string name="turki">التركية</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">تفاصيل الخبر</string>
+    <string name="item1">تنبيهات عامة</string>
+    <string name="item2">تنبيهات المحادثات</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="speach">الخطب</string>
+    <string name="donations">التبرعات</string>
+    <string name="doniation">تبرع</string>
+    <string name="profilefile">الملف الشخصي</string>
+    <string name="textspeach_tasks">ابحث في المهام</string>
+    <string name="detais">تفاصيل المهمة</string>
+    <string name="tasks">إدارة المهام</string>
 </resources>

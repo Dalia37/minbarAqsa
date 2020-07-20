@@ -5,17 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".speachFilter"
-    android:background="@drawable/img_login_bg">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/img_speachfilter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#CE8B2B"
+    android:layout_gravity="end"
+    tools:openDrawer="start">
 
 
     <TextView
@@ -23,58 +15,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/spewachdate"
         android:textColor="@android:color/white"
         android:textSize="20sp"
+        android:layout_marginEnd="26dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/from"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/filter_text"
-        android:textColorHint="@android:color/white"
-        android:layout_marginEnd="185dp"
-        android:layout_marginStart="26dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/taskmanagefilter_from"
-            android:drawableStart="@drawable/ic_taskmanagefilter_date"/>
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/from"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginStart="26dp"
-        android:textColorHint="@android:color/white">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/taskmanagefilter_to"
-            android:drawableStart="@drawable/ic_taskmanagefilter_date"/>
-
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
 
     <Button
         android:layout_width="wrap_content"
@@ -89,9 +39,44 @@
         android:textStyle="bold"
         android:textSize="20sp"/>
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/date_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_taskmanagefilter_date"
+        android:hint="@string/taskmanagefilter_to"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:clickable="true"
+        android:enabled="false"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_from" />
 
-
-
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/date_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_taskmanagefilter_date"
+        android:hint="@string/taskmanagefilter_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TextspeachActivity"
-    android:background="@drawable/img_login_bg">
+    android:background="@drawable/img_login_bg"
+    tools:context=".TextspeachActivity">
+
 
 
     <com.google.android.material.tabs.TabLayout
@@ -16,10 +17,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="@color/tabbacground"
-        app:tabMode="fixed"
-        app:tabTextColor="#DEBA86"
         app:tabIndicatorColor="#AA422F"
-        app:tabSelectedTextColor="@android:color/white">
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="#DEBA86">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -37,23 +38,23 @@
         android:id="@+id/textspeach_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_edittext"
-        app:layout_constraintTop_toBottomOf="@id/textspeach_tablayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:hint="@string/textspeach_search"
-        android:layout_marginTop="14dp"
         android:layout_marginStart="26dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="26dp"
-        android:textSize="16sp"
+        android:background="@drawable/shape_edittext"
+        android:drawableStart="@drawable/ic_news_search"
+        android:hint="@string/textspeach_search"
         android:padding="20dp"
-        android:drawableStart="@drawable/ic_news_search"/>
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textspeach_tablayout" />
 
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/textspeach_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textspeach_search" />
@@ -62,13 +63,13 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="30dp"
         android:layout_marginBottom="23dp"
+        app:backgroundTint="#CE8B2B"
         android:src="@drawable/ic_textspeach_add"
+        android:onClick="addtextspeach"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
 
 

@@ -66,17 +66,18 @@
             android:text="00782342333456 \n khaled21@gmail.com \n تركيا، اسطنبول"/>
 
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/pesonalcard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/personal_details"
+         android:theme="@style/Theme.MaterialComponents.Light"
+
+        app:layout_constraintTop_toBottomOf="@+id/personal_details"
             android:layout_marginTop="20dp"
             android:layout_marginStart="26dp"
             android:layout_marginEnd="26dp"
-            app:cardCornerRadius="30dp"
             android:padding="20dp">
 
             <LinearLayout
@@ -115,7 +116,7 @@
 
             </LinearLayout>
 
-        </com.google.android.material.card.MaterialCardView>
+        </androidx.cardview.widget.CardView>
 
 
         <com.google.android.material.card.MaterialCardView

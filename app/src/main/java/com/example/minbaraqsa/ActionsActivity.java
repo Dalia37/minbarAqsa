@@ -25,12 +25,12 @@ public class ActionsActivity extends AppCompatActivity {
 
         actions.add(new actionModel("ملتقى منبر الأقصى للخطباء والدعاة الثاني","فعاليات ملتقى منبر الأقصى للخطباء والدعاة الذي تنظمه لجان القدس في الاتحاد العالمي لعلماء المسلمين وهيئة","1/3/2020"));
         actions.add(new actionModel("ملتقى منبر الأقصى للخطباء والدعاة الأول","فعاليات ملتقى منبر الأقصى للخطباء والدعاة الذي تنظمه لجان القدس في الاتحاد العالمي لعلماء المسلمين وهيئة","1/3/2019"));
-    }
 
-    public void creat_recycler(){
         actionAdapter adapter = new actionAdapter(actions);
         rv.setLayoutManager(new LinearLayoutManager(this));
         rv.setHasFixedSize(true);
         rv.setAdapter(adapter);
     }
+
+
 }

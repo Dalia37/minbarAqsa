@@ -30,50 +30,92 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:background="#BA7A20"
-        android:maxLines="2"
-        android:padding="15dp"
-        android:text="عذراً،، لم يتم تنشيط حسابكم \n     من قبل إدارة التطبيق ، يرجى الانتظار"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img" />
-
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="72dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:srcCompat="@drawable/ic_main_sorry" />
+        android:id="@+id/ic_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_main_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="50dp" />
+    <ImageView
+        android:id="@+id/ic_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_main_menu"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+    <ImageView
+        android:id="@+id/ic_share"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/share"
+        android:tint="#AA4230"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ic_notification"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"/>
+
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/shapeview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#BA7A20"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:shape_arc_height="30dp"
+        app:shape_arc_position="bottom">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_main_sorry"
+            android:maxLines="2"
+            android:padding="15dp"
+            android:background="#BA7A20"
+            android:layout_gravity="center"
+            android:text="عذراً،، لم يتم تنشيط حسابكم \n     من قبل إدارة التطبيق ، يرجى الانتظار"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/home_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/shapeview" />
 
-    <ImageView
+    <Button
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
+        android:onClick="lookStory"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
         android:layout_marginBottom="33dp"
-        android:src="@drawable/refresh"
+        android:background="@drawable/refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

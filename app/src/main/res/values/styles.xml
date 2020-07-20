@@ -1,11 +1,24 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#CE8B2B</item>
         <item name="colorPrimaryDark">#CE8B2B</item>
         <item name="colorAccent">#CE8B2B</item>
+
+        <item name="windowMinWidthMajor">0dp</item>
+        <item name="windowMinWidthMinor">0dp</item>
     </style>
+
+ <style name="Theme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#CE8B2B</item>
+        <item name="colorPrimaryDark">#CE8B2B</item>
+        <item name="colorAccent">#CE8B2B</item>
+
+    </style>
+
+
 
 </resources>

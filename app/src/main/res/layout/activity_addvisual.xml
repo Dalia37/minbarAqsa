@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,45 +8,58 @@
     android:orientation="vertical"
     android:background="@drawable/img_login_bg">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/speachtype"
-            android:textSize="20sp"
-            android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"/>
-
-
-    </com.google.android.material.textfield.TextInputLayout>
+   <com.tiper.MaterialSpinner
+       android:id="@+id/add_spinner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/addsermon_type"
+       android:textColor="#AA4230"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginStart="26dp"
+       android:layout_marginEnd="26dp"
+       android:layout_marginTop="20dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_spinner"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/speachaddress"
             android:textSize="20sp"
+            android:textColor="#AA4230"
             android:layout_marginStart="26dp"
-            android:layout_marginEnd="26dp"/>
+            android:layout_marginEnd="26dp"
+            android:textColorHint="#AA4230"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_link"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/speachlink"
             android:textSize="20sp"
+            android:textColor="#AA4230"
+            android:textColorHint="#AA4230"
             android:layout_marginStart="26dp"
             android:layout_marginEnd="26dp"/>
 
@@ -56,14 +69,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_bg"
         android:layout_marginStart="26dp"
-        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
         android:text="@string/addsermon_add"
+        android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"/>
+        android:padding="5dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

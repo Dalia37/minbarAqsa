@@ -5,25 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".taskmanagefilter"
-    android:background="@drawable/img_login_bg">
+    android:background="#CE8B2B">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/taskmanagefilter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="26dp"
         android:text="@string/taskmanagefilter_date"
+        android:layout_marginBottom="20dp"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
@@ -32,46 +26,52 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="185dp"
         android:layout_marginStart="15dp"
-        android:textColorHint="@android:color/white">
+        android:layout_marginTop="70dp"
+        android:background="#CE8B2B"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="26dp"
+            android:drawableStart="@drawable/ic_taskmanagefilter_date"
             android:hint="@string/taskmanagefilter_from"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            android:textSize="20sp"
-            android:drawableStart="@drawable/ic_taskmanagefilter_date" />
+            android:textSize="20sp" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="185dp"
         android:layout_marginStart="15dp"
-        android:textColorHint="@android:color/white">
+        android:layout_marginTop="10dp"
+        android:background="#CE8B2B"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:drawableStart="@drawable/ic_taskmanagefilter_date"
             android:hint="@string/taskmanagefilter_to"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            android:textSize="20sp"
-            android:drawableStart="@drawable/ic_taskmanagefilter_date" />
+            android:textSize="20sp" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -80,25 +80,29 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="185dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp"
         android:hint="@string/taskmanagefilter_super"
-        android:textColorHint="@android:color/white" />
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:background="#CE8B2B"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2" />
 
     <com.tiper.MaterialSpinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/spinner"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="185dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp"
         android:hint="@string/taskmanagefilter_classification"
-        android:textColorHint="@android:color/white" />
+        android:layout_marginEnd="26dp"
+        android:background="#CE8B2B"
+        android:layout_marginStart="26dp"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner" />
 
     <Button
         android:layout_width="wrap_content"

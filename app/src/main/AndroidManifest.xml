@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.minbaraqsa">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,26 +11,115 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".manageFilter"></activity>
+        <activity android:name=".taskmanagment" />
+        <activity android:name=".manage"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+
+        </activity>
+        <activity
+            android:name=".Drawer"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
         <activity android:name=".applanguage" />
-        <activity android:name=".addvisualActivity" />
+        <activity
+            android:name=".addvisualActivity"
+            android:parentActivityName=".TextspeachActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
         <activity android:name=".ActionsActivity" />
-        <activity android:name=".donations" />
+        <activity
+            android:name=".donations"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
         <activity android:name=".mytaskfilter" />
         <activity android:name=".speachFilter" />
         <activity android:name=".taskmanagefilter" />
         <activity android:name=".MyTask" />
-        <activity android:name=".taskdetails" />
+        <activity android:name=".taskdetails"
+            android:parentActivityName=".manage"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+
+
+        </activity>
         <activity android:name=".contactusActivity" />
-        <activity android:name=".pesonalfileActivity" />
-        <activity android:name=".libraryActivity" />
-        <activity android:name=".donationdetails" />
-        <activity android:name=".notificationActivity" />
+        <activity
+            android:name=".pesonalfileActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".libraryActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".donationdetails"
+            android:parentActivityName=".donations"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".notificationActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
         <activity android:name=".speachdetailsActivity" />
-        <activity android:name=".TextspeachActivity" />
-        <activity android:name=".detailsActivity" />
-        <activity android:name=".newsActivity" />
-        <activity android:name=".MoreActivity" />
-        <activity android:name=".storyActivity" />
+        <activity
+            android:name=".TextspeachActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".detailsActivity"
+            android:parentActivityName=".newsActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".newsActivity"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.minbaraqsa.HomeActivity" />
+        </activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".AboutApp" />
         <activity android:name=".AddSermonActivity" />

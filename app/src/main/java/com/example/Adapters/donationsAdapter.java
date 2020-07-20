@@ -1,5 +1,6 @@
 package com.example.Adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +17,14 @@ import java.util.ArrayList;
 public class donationsAdapter extends RecyclerView.Adapter<donationsAdapter.donationsViewHolder> {
 
     ArrayList<donationsModel> donations = new ArrayList<>();
+    Onitemdonationlistener listener ;
+    RecyclerView rv ;
+    Context context ;
 
-    public donationsAdapter(ArrayList<donationsModel> donations) {
+    public donationsAdapter(ArrayList<donationsModel> donations, Onitemdonationlistener listener, RecyclerView rv) {
         this.donations = donations;
+        this.listener = listener;
+        this.rv = rv;
     }
 
     @NonNull
@@ -45,8 +51,15 @@ public class donationsAdapter extends RecyclerView.Adapter<donationsAdapter.dona
 
         public donationsViewHolder(@NonNull View itemView) {
             super(itemView);
-            donations_img=itemView.findViewById(R.id.donationdetais_img);
-            donations_tv=itemView.findViewById(R.id.donations_tv);
+            donations_img=itemView.findViewById(R.id.img_donation);
+            donations_tv=itemView.findViewById(R.id.tv_donation);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int pos=rv.getChildAdapterPosition(view);
+                    listener.Onclick(donations.get(pos));
+                }
+            });
         }
     }
 }
